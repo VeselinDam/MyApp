@@ -13,6 +13,7 @@ public class App {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        //test aplikacija
         checkUser();
         mainWindow();
         chose();
