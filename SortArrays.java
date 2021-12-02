@@ -6,12 +6,7 @@ import static java.util.Arrays.*;
 
 public class SortArrays {
     public static void main(String[] args) {
-//        int[] random = { 33, 22, 11, 21, 55, 32, 3, 4 };
-//        System.out.println("Array before sorting : " + Arrays.toString(random));
-//        Arrays.sort(random);
-//        System.out.println("Array after sorting in ascending order : " + Arrays.toString(random));
         niz();
-
     }
     public static void niz(){
         int[] nizovi = {2,4,5,8,44,-55,24};
