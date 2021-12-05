@@ -11,7 +11,6 @@ public class JumpingFromOnePlaceToAnother {
     public static void number() throws InterruptedException {
         Random random = new Random();
         int start = 0;
-        int roll = 1 ;
         int attempt = 0;
         int user = 0;
         int prison = 15;
