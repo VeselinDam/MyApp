@@ -17,9 +17,11 @@ public class countDown {
         Thread.sleep(1000);
         System.out.println("GO GO GO GO");
         Scanner scanner = new Scanner(System.in);
-        String ime = scanner.next();
+        System.out.println("Unesite prvi podatak: ");
+        scanner.next();
         long startTime = System.currentTimeMillis();
-        String prezime = scanner.next();
+        System.out.println("Unesite drugi podatak: ");
+        scanner.next();
         long endTime = System.currentTimeMillis();
         long time = startTime - endTime;
         System.out.println("Razlika izmedju prvo unosa podataka i drugog je: ");
