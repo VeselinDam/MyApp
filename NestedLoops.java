@@ -1,18 +1,9 @@
 package test;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.*;
-
 public class NestedLoops {
-
-    //static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) throws InterruptedException {
         duplicate('D');
         reverse("veka");
-        //countDown();
-
     }
 
     public static void duplicate(char slovo){
