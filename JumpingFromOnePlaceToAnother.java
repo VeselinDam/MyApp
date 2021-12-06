@@ -17,6 +17,12 @@ public class JumpingFromOnePlaceToAnother {
         int end = 30;
         int min = 1;
         int max = 6;
+        int tax = 1001;
+        int chance1 = 2;
+        int chance2 = 13;
+        int suprise1 = 7;
+        int suprise2 = 18;
+        int amount = 2000;
 
         for (int i=0; i<end; i++){
             int randomNum = random.nextInt(min, max);
@@ -24,6 +30,35 @@ public class JumpingFromOnePlaceToAnother {
                 if(user <= end){
                     user += randomNum;
                     System.out.println(user);
+                    if(user == chance1){
+                        System.out.println("Dobili ste sansu: Idite 2 polja unapred!");
+                        user += 2;
+                        if(user == 4){
+                            if(amount > tax){
+                                System.out.println("Morate platiti 1000$ poreza!");
+                                amount -= tax;
+                                System.out.println("Vas budzet je "+amount+"$");
+                            }
+                            else {
+                                System.out.println("Nemate dovoljno para, izgubili ste.");
+                                break;
+                            }
+                        }
+                    }
+                    if(user == suprise1){
+                        System.out.println("Dobili ste iznenadjenje: Idite do cilja.");
+                        user = end;
+                        System.out.println("Bravo pobedili ste");
+                        break;
+                    }
+                    if(user == chance2){
+                        System.out.println("Dobili ste sansu: Idite 2 polja unapred!");
+                        user += 2;
+                    }
+                    if(user == suprise2){
+                        System.out.println("Dobili ste iznenadjenje: Vratite se 2 polja unazad.");
+                        user -= 3;
+                    }
                     if(user == prison){
                         System.out.println("Idete u zatvor. Morate 5-icu da dobijete da bi ste izasli");
 
